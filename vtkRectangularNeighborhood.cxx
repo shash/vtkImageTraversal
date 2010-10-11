@@ -18,7 +18,7 @@ void vtkRectangularNeighborhood::SetCenter(int i, int j, int k)
 
 void* vtkRectangularNeighborhood::GetPixelAtOffset(int p[3])
 {
-  this->GetPixelAtOffset(p[0], p[1], p[2]);
+  return this->GetPixelAtOffset(p[0], p[1], p[2]);
 }
 
 void* vtkRectangularNeighborhood::GetPixelAtOffset(int i, int j, int k)
